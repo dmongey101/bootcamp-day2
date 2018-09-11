@@ -1,0 +1,47 @@
+.box {
+    color: black;
+    border: 1px solid black;
+    height: 200px;
+    width: 50px;
+}
+
+.box2 {
+    display: none;
+
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    /* if screen size is bigger than */
+    .box {
+        background-color: blue;
+        /* then do this */
+        width: 50%;
+    }
+
+    .box2 {
+        background-color: black;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .box {
+        background-color: red;
+        width: 100%;
+    }
+    .mobile {
+        display: none;
+    }
+    .box2 {
+        background-color: black;
+        color: black;
+        border: 1px solid black;
+        height: 200px;
+        width: 50px;
+        display: block
+    }
+        
